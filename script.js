@@ -1,7 +1,4 @@
-//fetch()
-//url()
-//api.openweathermap.org/data/2.5/weather?q={city name}&appid={API key}
-//3e1fa14633f72c140180241b63970ccf
+
 
 let maindiv = document.getElementById("maindiv")
 
@@ -91,9 +88,3 @@ div2.append(iframe);
 maindiv.append(div1, div2);
 }
 
-
-// feels_like: 24.63
-// grnd_level: 963
-// humidity: 23
-// pressure: 1011
-// sea_level: 1011
