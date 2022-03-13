@@ -1,5 +1,3 @@
-
-
 let maindiv = document.getElementById("maindiv")
 
 async function getWeather(){
@@ -8,7 +6,7 @@ try{
 
     let city = document.getElementById("city").value
 
-    let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=3e1fa14633f72c140180241b63970ccf&units=metric`)
+    let res = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`)
 
     let data = await res.json();
 
@@ -35,7 +33,7 @@ function error(){
     document.getElementById("maindiv").append(img);
     
     
-    }
+}
 
 
 function appendData(data){
@@ -86,5 +84,5 @@ div1.append(name, temp, pressure, humidity, feels, ground, sealevel);
 div2.append(iframe);
 
 maindiv.append(div1, div2);
-}
 
+}
